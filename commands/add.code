@@ -1,0 +1,17 @@
+const { sequelize, Sequelize, QueryTypes } = require('../lib/models.js');
+
+module.exports = {
+        data: new SlashCommandBuilder()
+                .setName('add')
+                .setDescription('Add new pricebot to database')
+                .addStringOption(option => option.setName('coinid').setDescription('Unique identifier'))
+                .addStringOption(option => option.setName('api').setDescription('API to use'))
+                .addStringOption(option => option.setName('api_id').setDescription('Identifier used by API'))
+                .addStringOption(option => option.setName('token').setDescription('Coin token'))
+                .addStringOption(option => option.setName('chain').setDescription('Blockchain ID'))
+                .addStringOption(option => option.setName('contract').setDescription('Contract address'))
+                .addStringOption(option => option.setName('bot_token').setDescription('Discord bot token'))
+                .addStringOption(option => option.setName('bot_status').setDescription('Active status, default false'))
+                .addStringOption(option => option.setName('showToken').setDescription('Show token in username'))
+                .setDMPermission(true),
+        async execute(interaction) {

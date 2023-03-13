@@ -1,0 +1,7 @@
+db/infobots.sqlite
+node_modules/
+package-lock.json
+config.json
+commands/	
+populate.js
+syncDbs.js

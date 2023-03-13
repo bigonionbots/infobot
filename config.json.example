@@ -1,0 +1,18 @@
+{
+"bot_name": "Infobot",
+"defaultDecimals": 6,
+"db": {
+        "user":"DB USERNAME",
+        "host":"localhost",
+        "database":"infobots",
+        "password":"password",
+	"dialect":"sqlite",
+	"storage":"db/infobots.sqlite"
+        },
+
+"lcwAPI": "livecoinwatch API key",
+"cmcAPI": "coinmarketcap API key",
+"dexguruAPI": "dexguru API key",
+"webhookURL": "discord webhook url for notifications",
+"_comment": "replace fields as needed, can delieve the API keys if not needed in the apis/ files"
+}
