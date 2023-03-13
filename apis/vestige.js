@@ -9,7 +9,7 @@ module.exports = {
                 const { apiId, currPair, decimals } = botData || {};
 
                 const responses = await Promise.all([
-                        fetchRetry(`https://free-api.vestige.fi/asset/${apiId}/price?currency=${currPair.toUpperCase()`),
+                        fetchRetry(`https://free-api.vestige.fi/asset/${apiId}/price?currency=${currPair.toUpperCase()}`),
                         fetchRetry(`https://free-api.vestige.fi/asset/${apiId}/prices/simple/1D`),
                         fetchRetry(`https://free-api.vestige.fi/asset/${apiId}`)
                 ]).catch(error => errorReport("Error: " + coin + ": " + error));
